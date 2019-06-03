@@ -24,7 +24,7 @@ public class Thanos {
 
             @Override
             public int compare(Hero hero1, Hero hero2) {
-                return hero1.getAge() - hero2.getAge();
+                return hero2.getAge() - hero1.getAge();
             }
         };
         Collections.sort(heroes, comparator);
